@@ -8,12 +8,18 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent } from '../components/app.component';
 import { HomeComponent } from "../components/home.component";
 import { ErrorComponent } from "../components/error.component";
+import { ContactComponent } from "../components/contact.component";
+import { AboutComponent } from "../components/about.component";
+import { ProjectsComponent } from "../components/projects.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     RouterModule.forRoot(ROUTES),
