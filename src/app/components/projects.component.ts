@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'projects',
   templateUrl: '../../templates/projects.html'
 })
 export class ProjectsComponent {

@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Caleb Gosiak Home</title>
@@ -10,39 +11,65 @@
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-cyan.min.css" />
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
 
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title"><a href="">Caleb Gosiak</a></span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation. We hide it in small screens. -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="about">About</a>
-        <a class="mdl-navigation__link" href="projects">Projects</a>
-        <a class="mdl-navigation__link" href="contact">Contact</a>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title"><a href="#home">Caleb Gosiak</a></span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="#about">About</a>
+          <a class="mdl-navigation__link" href="#projects">Projects</a>
+          <a class="mdl-navigation__link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+      <span class="mdl-layout-title" id="home-drawer-link"><a href="#home">Caleb Gosiak</a></span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#about">About</a>
+        <a class="mdl-navigation__link" href="#projects">Projects</a>
+        <a class="mdl-navigation__link" href="#contact">Contact</a>
       </nav>
     </div>
-  </header>
-  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-    <span class="mdl-layout-title"><a href="">Caleb Gosiak</a></span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="about">About</a>
-      <a class="mdl-navigation__link" href="projects">Projects</a>
-      <a class="mdl-navigation__link" href="contact">Contact</a>
-    </nav>
+    <main class="mdl-layout__content">
+      <div class="home_content">
+        <!-- Your content goes here -->
+        <section class="section_view" id="home">
+          <div class="page-content">
+            <!-- Your content goes here -->
+            <home></home>
+          </div>
+        </section>
+        <section class="section_view" id="about">
+          <div class="page-content">
+            <!-- Your content goes here -->
+            <about></about>
+          </div>
+        </section>
+        <section class="section_view" id="projects">
+          <div class="page-content">
+            <!-- Your content goes here -->
+            <projects></projects>
+          </div>
+        </section>
+        <section class="section_view" id="contact">
+          <div class="page-content">
+            <!-- Your content goes here -->
+            <contact></contact>
+          </div>
+        </section>
+      </div>
+    </main>
   </div>
-  <main class="mdl-layout__content">
-    <div class="page-content" style="padding: 2%;">
-      <!-- Your content goes here -->
-      <app-root>Loading...</app-root>
-    </div>
-  </main>
-</div>
+  <script type="text/javascript" src="assets/js/site.js"></script>
 </body>
 </html>
