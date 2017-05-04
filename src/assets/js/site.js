@@ -1,12 +1,7 @@
 $(document).ready(function () {
 
 	// Link in MDL Drawer is Clicked
-    $('.mdl-navigation__link').click(function() {
-		closeMDLDrawer();
-	});
-
-	// Home Link in drawer is clicked
-	$('#home-drawer-link').click(function() {
+    $('.drawer_link').click(function() {
 		closeMDLDrawer();
 	});
 
