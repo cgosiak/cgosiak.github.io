@@ -10,6 +10,8 @@ import { ContactComponent } from "../components/contact.component";
 import { AboutComponent } from "../components/about.component";
 import { ProjectsComponent } from "../components/projects.component";
 
+import { RepoService } from '../services/repo.service';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -23,7 +25,13 @@ import { ProjectsComponent } from "../components/projects.component";
     FormsModule,
     HttpModule
   ],
-  providers: [],
-  bootstrap: [HomeComponent, AboutComponent, ProjectsComponent, ContactComponent]
+  providers: [
+    RepoService
+  ],
+  bootstrap: [
+    HomeComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ContactComponent]
 })
 export class AppModule { }
