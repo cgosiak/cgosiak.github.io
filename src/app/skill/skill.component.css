@@ -1,0 +1,11 @@
+.skill-card {
+  margin: 16px;
+}
+
+.skill-card mat-card-content {
+  height: 100px;
+}
+
+.skill-header-image {
+  background-size: cover;
+}

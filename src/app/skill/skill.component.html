@@ -1,0 +1,15 @@
+<mat-card class="skill-card" *ngIf="skill">
+  <mat-card-header>
+    <div mat-card-avatar class="skill-header-image" [style.backgroundImage]="'url(' + skill.image + ')'"></div>
+    <mat-card-title>{{skill.name}}</mat-card-title>
+    <mat-card-subtitle>{{skill.caption}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{skill.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button [href]="skill.website" target="_blank">More Info</a>
+  </mat-card-actions>
+</mat-card>
